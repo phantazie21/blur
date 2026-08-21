@@ -1,0 +1,1 @@
+contextmenus are working for explorer and explorer-files, but are ready to be designed and implemented to editor and tabs. after that, let's work on top bar, saving functionality, and following each tab's data and updating it with the current textarea value if it is active, and setting dirty flag to true. This will let the user save it.

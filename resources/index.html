@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>blur.</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <script src="/js/neutralino.js"></script>
+        <script src="/js/contextMenu.js"></script>
+        <script src="/js/editor.js"></script>
+        <script src="/js/node.js"></script>
+        <script src="/js/file.js"></script>
+        <script src="/js/directory.js"></script>
+        <script src="/js/main.js"></script>
+        <div class="ctx-menu" id="tab">
+            <ul>
+                <li onclick="closeTab()">Close Tab</li>
+            </ul>
+        </div>
+        <div class="ctx-menu" id="editor">
+            <ul>
+                <li>Cut</li>
+                <li>Copy</li>
+                <li>Paste</li>
+            </ul>
+        </div>
+        <div class="ctx-menu" id="explorer">
+            <ul>
+                <li>New File</li>
+                <li>New Folder</li>
+                <li>Reveal in File Explorer</li>
+            </ul>
+        </div>
+        <div class="ctx-menu" id="explorer-folder">
+            <ul>
+                <li>Rename Folder</li>
+                <li>Expand/Collapse Folder</li>
+                <li>New File</li>
+                <li>New Folder</li>
+                <li>Reveal in File Explorer</li>
+            </ul>
+        </div>
+        <div class="ctx-menu" id="explorer-file">
+            <ul>
+                <li>Open File</li>
+                <li>Rename File</li>
+                <li>New File</li>
+                <li>New Folder</li>
+                <li>Reveal in File Explorer</li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="box" id="file-tree"></div>
+            <div class="handler"></div>
+            <div class="box" id="editor-parent">
+                <div id="editor-tabs"></div>
+                <textarea class="editor"></textarea>
+            </div>
+        </div>
+    </body>
+</html>
